@@ -37,7 +37,7 @@ func main() {
 		entry.Refresh()
 	}))
 	digitBtns = append(digitBtns, widget.NewButton("+/-", sign()))
-	digitBtns = append(digitBtns, widget.NewButton("", percent()))
+	digitBtns = append(digitBtns, widget.NewButton("()", input("()")))
 	digitBtns = append(digitBtns, widget.NewButton("/", input("/")))
 
 	for _, v := range digits {
